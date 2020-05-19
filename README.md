@@ -1,2 +1,3 @@
 # missionmarks
-make a project using python, machine learning algorithms to predict the marks 
+To predict the Student final marks by machine model using different machine learning Algorithms 
+
