@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>MarksPrediction!</title>
+  </head>
+  <style>
+    body {
+       background-image: url("/static/a1.jpg");;
+       background-size:100%;
+       background-position-x: center; 
+       
+       
+      
+    }
+    .footer {
+            position:sticky;
+            left: 0%;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(15, 15, 1, 0.603);
+            color: white;
+            text-align: center;
+            visibility:unset;
+          }
+  a:link, a:visited {
+            background-color: #191630;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(153, 26, 153);
+}
+#new11 {
+  color: white;
+  border-width: 10px;
+  padding: inherit;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+
+  
+  
+}
+#frame1{
+  padding-left: 50px;
+}
+#h1ofproject {color: whitesmoke;
+box-sizing: initial ;
+}
+#h1ofproject1 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color:white;
+}
+
+#parainfo{
+  color : rgb(245, 245, 245);
+  border:groove;
+  padding-left: 20px;
+  border-radius:10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-width: 50%;
+  
+  
+
+}
+
+#button1:link, #button1:visited {
+            background-color:  #191630;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+}
+
+#button1:hover, #button1:active {
+  background-color: #191630;
+}
+  
+}    
+    
+ </style>
+    <body>
+      <nav class="navbar navbar-expand-lg ">
+         <a class="navbar-brand" href="/">MarksPrediction </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+      
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto"> 
+             <li class="nav-item ">
+               <a class="nav-link" href="/">Predictor <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="/Analysis">Analysis <span class="sr-only">(current)</span> </a>
+             </li>
+            
+             <li class="nav-item">
+               <a class="nav-link " href="/Visualisation" tabindex="-1" aria-disabled="true">Visualisation</a>
+             </li>
+
+             <li class="nav-item">
+              <a class="nav-link " href="/Dataset" tabindex="-1" aria-disabled="true">Student previous Result </a>
+            </li>
+            
+           </ul>
+         </div>
+       </nav>
+
+       <div id="frame1"class="container">
+           <h1 id="h1ofproject1" class="text mt-3" >Analysis of Student Dataset </h1>
+           <h4 id="h1ofproject"> Mid Sem -I & II Marks Analysis: </h4>
+           <div id= "new11" class="form-inline my-2 my-lg-0">
+            
+                 
+              {% for table in tables1 %}
+              {{ table|safe }}
+              {% endfor %} 
+
+              <div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+                {% for table in tables2 %}
+                {{ table|safe }}
+                {% endfor %} 
+             
+              </div>
+            
+            </div>  
+           
+          
+        <h4 id="h1ofproject"> Internal & External  Marks Analysis: </h4> 
+        <div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+          {% for table in tables3 %}
+          {{ table|safe }}
+          {% endfor %} 
+      
+          <div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+            {% for table in tables4 %}
+            {{ table|safe }}
+            {% endfor %} 
+         
+        </div>
+        </div>
+    <h4 id="h1ofproject"> End Semester Marks Analysis: </h4>       
+    <div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+      {% for table in tables5 %}
+      {{ table|safe }}
+      {% endfor %} 
+   
+  </div>
+  <h4 id="h1ofproject">  Complete Analysis of DataSet : </h4>
+  <div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+    {% for table in tables %}
+    {{ table|safe }}
+    {% endfor %} 
+ 
+</div>
+<h4 id="h1ofproject">Marks Analysis(Mean) in aspect of MS-I and MS-II</h4>
+<div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+  {% for table in tables6 %}
+  {{ table|safe }}
+  {% endfor %} 
+
+</div>
+
+<h4 id="h1ofproject">Marks Analysis(Mean) in aspect of Internal and External Marks</h4>
+<div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+  {% for table in tables8 %}
+  {{ table|safe }}
+  {% endfor %} 
+
+</div>
+<h4 id="h1ofproject">View of Complete Dataset with respect to End Semester Marks:</h4>
+<div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+  {% for table in tables7 %}
+  {{ table|safe }}
+  {% endfor %} 
+
+</div>
+
+<h4 id="h1ofproject">View of Complete Dataset with respect to End Semester Marks(Mean):</h4>
+<div id= "new11" class="form-inline my-2 my-lg-0">
+                 
+  {% for table in tables9 %}
+  {{ table|safe }}
+  {% endfor %} 
+
+</div>
+            
+            
+            
+           
+           <a id= "button1"href="/">
+
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go Back</button>
+           </a>
+
+       </div>
+       <div class="footer">
+        <p>Guided By prof.Anurag Kumar</p>
+        <p>&copy; Agnim Seth || Apoorv Mishra || Sourabh Baghel 2020</p>
+        
+      </div> 
+       
+    </div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
