@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>MissionMARKS</title>
+  </head>
+    <style>
+    body {
+       background-image: url("/static/bk3.jpg");
+       background-position-x: center; 
+       background-size: 100%;
+         }
+    form {
+       
+       text-align: left;
+       margin: 0 80px;
+       width:390px;
+       background-color: rgb(191, 189, 217)
+       padding: 100px;
+       text-align:left;
+       display: table;
+         }
+    #h1ofproject {color: aquamarine;}
+    label {
+      color: white;
+      background-color:rgb(71, 99, 255);
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 15px;
+      
+      
+          }
+          
+          .footer {
+            position: fixed;
+            left: 0%;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(15, 15, 1, 0.603);
+            color: white;
+            text-align: center;
+          }
+          
+        
+
+
+          a:link, a:visited {
+            background-color: #191630;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(153, 26, 153);
+}
+
+
+    </style>
+
+
+
+
+
+    <body>
+      <div>
+        <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="/">MarksPrediction </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"> 
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Predictor <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/Analysis" type="submit">Analysis <span class="sr-only">(current)</span> </a>
+              </li>
+              
+              <li class="nav-item  ">
+                <a class="nav-link " href="/Visualisation" tabindex="-1" aria-disabled="true">Visualisation</a>
+              </li>
+ 
+              <li class="nav-item ">
+               <a class="nav-link " href="/Dataset" tabindex="-1" aria-disabled="true">Student previous Result </a>
+             </li>
+ 
+            </ul>
+            
+          </div>
+        </nav>
+
+          <div class="container">
+              <h2 id = "h1ofproject" class="text-center italic" >Marks Prediction By Machine Learning</h2>
+          </div>
+         
+         
+         
+          <div>
+          <form action="/" method="POST"  >
+            <div class="form-group">
+              <label for="MSI">MidSem-I Marks :</label>
+              <input type="text" class="form-control" id="MSI" name="MSI" placeholder="please Enter within 0-20">
+            </div>
+       
+            <div class="form-group">
+                <label for="MSII">MidSem-II Marks :</label>
+                <input type="text" class="form-control" id="MSII" name="MSII" placeholder="please Enter within 0-20">
+            </div>
+       
+            <div class="form-group">
+              <label for="INTERNAL">INTERNAL Marks :</label>
+              <input type="text" class="form-control" id="INTERNAL" name="INTERNAL" placeholder="please Enter within 0-10">
+            </div>
+
+            <div class="form-group">
+              <label for="EXTERNAL">EXTERNAL Marks :</label>
+              <input type="text" class="form-control" id="EXTERNAL" name="EXTERNAL" placeholder="please Enter within 0-30">
+            </div>
+
+            <p align="left">
+            <button  class="btn btn-primary" >submit</button>
+            </p>
+          </form>
+          </div>
+        </div>  
+        
+          
+          <div class="footer">
+            <p>Guided By prof.Anurag Kumar</p>
+            <p>&copy; Agnim Seth || Apoorv Mishra || Sourabh Baghel 2020</p>
+            
+          </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
