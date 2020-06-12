@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    
+      body{
+        background-image: url("/static/a2.jpg");;
+       background-size:100%;
+       background-position-x: center; 
+      }
+    
+      a:link, a:visited {
+            background-color: #191630;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(153, 26, 153);
+}
+#button1:link, #button1:visited {
+            background-color: #191630;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+}
+
+#button1:hover, #button1:active {
+  background-color: #191630;
+}
+      .footer {
+            position:absolute;
+            left: 0%;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(15, 15, 1, 0.603);
+            color: white;
+            text-align: center;
+            visibility:unset;
+          }
+      #new10{
+        color:whitesmoke;
+      }
+    </style>
+    <title>MarksPrediction!</title>
+  </head>
+    <body>
+      <nav class="navbar navbar-expand-lg ">
+         <a class="navbar-brand" href="/">MarksPrediction </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+      
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto"> 
+             <li class="nav-item active">
+               <a class="nav-link" href="/">Predictor <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/Analysis">Analysis <span class="sr-only"></span> </a>
+             </li>
+            
+             <li class="nav-item">
+               <a class="nav-link " href="/Visualisation" tabindex="-1" aria-disabled="true">Visualisation</a>
+             </li>
+
+             <li class="nav-item">
+              <a class="nav-link " href="/Dataset" tabindex="-1" aria-disabled="true">Student previous Result </a>
+            </li>
+            
+           </ul>
+           
+         </div>
+       </nav>
+
+       <div class="container">
+           <h2 id="new10" class="text-center mt-3">Marks Prediction By Machine Learning</h2>
+           <p id="new10">Thanks For Using Machine Learning</p>
+            
+           <p id="new10">Student's marks predict by Machine : {{MK}} / 70</p>
+           {% if MK > 22%}
+              <p id="new10">Student Result : Pass</p>
+
+           {%else %}
+              <p id="new10">Student Result : Fail</p>
+           {% endif %} 
+           
+
+           
+
+           
+           
+
+           
+           <a id ="button1" href="/">
+
+            
+
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go Back</button>
+           </a>
+       </div>
+
+       <div class="footer">
+        <p>Guided By prof.Anurag Kumar</p>
+        <p>&copy; Agnim Seth || Apoorv Mishra || Sourabh Baghel 2020</p>
+        
+      </div> 
+    </div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
